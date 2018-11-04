@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/tourdates">
+	<Resource
+		name="jdbc/tourDate"
+		url="jdbc:mysql://localhost:3306/hemh?serverTimezone=UTC"
+		username="hangemhigh"
+		password="hangemhigh"
+		auth="Container"
+		driverClassName="com.mysql.jdbc.Driver"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		maxActive="100"
+		maxIdle="30"
+		maxWait="10000"
+		testOnBorrow="true"
+		testOnReturn="false"
+		testWhileIdle="true"
+		type="javax.sql.DataSource"
+		validationInterval="34000" validationQuery="SELECT 1">
+	</Resource>
+</Context>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hang Em High</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='css/standard.css'>
+        <link rel='stylesheet' href='css/dropzone.css'>
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src='js/heh.js'></script>
+        <script src="js/dropzone.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Sedgwick Ave Display' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+    </head>
+    <body>
+        <div id='banner'>HANG EM HIGH
+        </div>
+        <div class='noose noose1' id='left-noose1'> 
+        </div>
+        <div class='noose noose2' id='left-noose2'> 
+        </div>
+        <div class='noose noose1' id='left-noose3'> 
+        </div>
+        <div class='noose noose1' id='left-noose4'> 
+        </div>
+        <div class='noose noose1' id='left-noose5'> 
+        </div>
+        <div class='noose noose2' id='right-noose1'> 
+        </div>
+        <div class='noose noose1' id='right-noose2'> 
+        </div>
+        <div class='noose noose1' id='right-noose3'> 
+        </div>
+        <div>
+            <nav>
+                <a id='tour' href='#tour'>Tour Dates</a>
+                <a id='news' href='#news'>News</a>
+                <a id='music' href='#music'>Music</a>
+                <a id='photos' href='#photos'>Photos</a>
+                <a id='bio' href='#bio'>Bio</a>
+                <a id='contact' href='#contact'>Contact</a>
+            </nav>
+        </div>
+        <div class='popup dynamic' id='tour-popup'>
+            <img class='exit' src='images/exit3.png'>
+            <div id='tour-popup-container'>
+            </div>
+            <table id='tour-info'>    
+            </table>
+            <button  id='addbutton' type='button' name='add-tour'>Add A Tour Date</button>
+        </div>
+        <div class='popup dynamic' id='news-popup'>
+            <img class='exit' src='images/exit3.png'>
+            <div id='news-info'>    
+            </div>
+            <button id="add-news" type='button' name='add-news-button'>Post News</button>
+        </div>
+        <div class='popup dynamic' id='add-news-popup'>
+            <textarea maxlength='250' name="add-news-desc" placeholder='Add new news here'></textarea><br/>
+            <input type="hidden" name="add-news-key"><br/> 
+            <button type='button' name='save-add-news-button'>Post News</button>
+            <button type='button' name='cancel-add-news-button'>Cancel</button>
+        </div>
+        <div class='popup dynamic' id='news-modify-popup'>
+            <textarea name="news-desc" placeholder='Type up to date news information here'></textarea><br/>
+            <input type="hidden" name="news-key"><br/> 
+            <button id='news-save-button' type='button' name='news-save'>Save</button>
+            <button type='button' name='news-delete'>Delete</button>
+            <button type='button' name='news-cancel'>Cancel</button>
+        </div>
+        <div class="popup" id="music-popup">
+            <a target="_blank" href='/tourdates/uploads/KennY Vox With You.mp3'>With You</a><br/>
+            <a target="_blank" href='/tourdates/uploads/KennY Vox Drowning.mp3'>Drowning</a><br/>
+            <a target="_blank" href='/tourdates/uploads/The Rope 1.mp3'>The Rope</a><br/>
+            <a target="_blank" href='/tourdates/uploads/Hang Em High.mp3'>Hang Em High</a><br/>
+            <a target="_blank" href='/tourdates/uploads/High Noon 1.mp3'>High Noon</a><br/>
+            <a target="_blank" href='/tourdates/uploads/The Great Delay.mp3'>The Great Delay</a><br/>
+            <a target="_blank" href='/tourdates/uploads/Rabbit.mp3'>Rabbit</a><br/>
+            <img class='exit' src='images/exit3.png'>
+            <div id="data-form">
+                <input type="hidden" name="numFiles" value="0"/>
+                <div id="upload"></div>
+            </div> 
+            <audio id="player" controls>
+                <source src="" type="audio/mp3" id="audio"/>
+            </audio>
+        </div>
+        <div class='popup dynamic ' id='bio-popup'>
+            <img class='exit' src='images/exit3.png'>
+            <div id='bio-names'>
+            </div>
+            <button  id='addbutton' type='button' name='add-bio'>Add A New Member</button>
+        </div>
+        <div class='popup dynamic' id='detail-popup'>
+            <img class='exit'  id='exit' src='images/exit3.png'>
+            <div id='bio-name'>
+            </div>
+            <span id='bio-instrument'>
+            </span>
+            <div  id='bio-desc'>
+            </div>
+        </div>
+        <div class='popup' id='contact-popup'>
+            <img class='exit'  id='exit' src='images/exit3.png'>
+            <input type="text" name="contact-name" placeholder="Name"><br/>
+            <input type="text" name="contact-email" placeholder="E-mail"><br/>
+            <input type="text" name="contact-subject" placeholder="Subject"><br/>
+            <textarea rows='5' cols='50' name="contact-message" maxlength="750" placeholder="Messsage">
+            </textarea><br/>
+            <button type="button" name="send-email-button" >Send Email</button>
+            <div id='social-logos-center'>
+                <img class='social-logos' id='facebook' src='images/facebook.png'>
+                <img class='social-logos' id='insta' src='images/insta.png'>
+            </div>
+        </div>
+        <div class='popup dynamic' id='tour-modify-popup'>
+            <input type="date" name="date"><br/>
+            <input type="text" name="location" placeholder='Location'><br/>
+            <input type="text" name="city" placeholder='City'><br/>
+            <input type="text" maxlength='2' name="state" placeholder='State'><br/>
+            <input type="text" name="purchase" placeholder='Purchase'><br/>
+            <input type="hidden" name="key"><br/> 
+            <button id='savebutton' type='button' name='save'>Save</button>
+            <button type='button' name='delete'>Delete</button>
+            <button type='button' name='cancel'>Cancel</button>
+        </div>
+        <div class='popup dynamic' id='tour-add-popup'>
+            <input type="date" name="add-date"><br/>
+            <input type="text" name="add-location" placeholder='Location'><br/>
+            <input type="text" name="add-city" placeholder='City'><br/>
+            <input type="text" maxlength='2' name="add-state" placeholder='State'><br/>
+            <input type="text" name="add-purchase" placeholder='Purchase'><br/>
+            <input type="hidden" name="add-key"><br/> 
+            <button type='button' name='save-add-button'>Add</button>
+            <button type='button' name='cancel-add-button'>Cancel</button>
+        </div>
+        <div class='popup dynamic' id='bio-modify-popup'>
+            <input type="text" name="modify-bio-name" placeholder='Name'><br/>
+            <input type="text" name="modify-bio-instrument" placeholder='Instrument'><br/>
+            <textarea rows='5' cols='50' maxlength="350" name="modify-bio-description" placeholder='Description'>
+            </textarea><br/>
+            <input type="text" maxlength="1" name="modify-bio-status" placeholder='Status'><br/>
+            <input type="hidden" name="modify-bio-key"><br/> 
+            <button  type='button' name='modify-bio-save-button'>Save</button>
+            <button  type='button' name='delete-bio-button'>Delete</button>
+            <button type='button' name='cancel-modify-bio-button'>Cancel</button>
+        </div>
+        <div class='popup dynamic' id='bio-add-popup'>
+            <input type="text" name="add-bio-name" placeholder='Name'><br/>
+            <input type="text" name="add-bio-instrument" placeholder='Instrument'><br/>
+            <textarea rows='5' cols='50' maxlength="350" name="add-bio-description" placeholder='Description'>
+            </textarea><br/>
+            <input type="text" maxlength="1" name="add-bio-status" placeholder='Status'><br/>
+            <button type='button' name='save-bio-add-button'>Add</button>
+            <button type='button' name='cancel-bio-add-button'>Cancel</button>
+        </div>
+    </body>
+</html>

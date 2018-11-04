@@ -1,0 +1,221 @@
+html, body {
+    background-image: url('../images/crop_hangingtree.png');
+    background-position: 30% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    font-family: serif;
+    font-size: 4vh;
+}
+
+#banner {
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'New Rocker';
+    font-size: 4em;
+    text-shadow: 3px 3px rgba(255, 165, 0, .6);
+    color: rgba(255, 255, 255, .7);
+}
+
+.noose {
+    padding: 2vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 25vh;
+    width: 3vw;
+}
+
+.noose1 {
+    background-image: url('../images/3noose.png');
+}
+.noose2 {
+    background-image: url('../images/4noose.png');
+}
+
+@keyframes noose-swing {
+    0% {transform: rotate(0deg);}
+    12.5% {transform: rotate(30deg);}
+    25% {transform: rotate(-30deg);} 
+    37.5% {transform: rotate(20deg);}
+    50% {transform: rotate(-20deg);}
+    62.5% {transform: rotate(15deg);}
+    75%  {transform: rotate(-15deg);}
+    87.5% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.animated {
+    transform-origin: top;
+    animation-name: noose-swing;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+#left-noose1 {
+    left: 30vw;
+    top: 22vh;
+}
+#left-noose2 {
+    left: 18vw;
+    top: 21vh;
+}
+#left-noose3 {
+    left: 33vw;
+    top: 25vh;
+}
+#left-noose4 {
+    left: 38vw;
+    top: 30vh;
+}
+#left-noose5 {
+    left: 43vw;
+    top: 34vh;
+}
+
+#right-noose1 {
+    right: 25vw;
+    top: 28vh;
+}
+#right-noose2 {
+    right: 19vw;
+    top: 20vh;
+}
+#right-noose3 {
+    right: 7vw;
+    top: 12vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 1.5em;
+    /*    left: 50%;
+        transform: translateX(-50%);*/
+    font-size: 1.5em;
+    font-family: 'Sedgwick Ave Display';
+}
+
+nav > a {
+    text-decoration: none;
+    white-space: nowrap;
+    text-shadow: 1.5px 1.5px rgba(255, 255, 255, .6);
+    color: rgba(255, 165, 0, .6);
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+nav > a:first-child {
+    margin-right: .5em;
+}
+
+nav > a:last-child {
+    margin-left: .5em; 
+}
+
+
+#tour-popup {
+    white-space: nowrap;
+}
+
+.popup {
+    background-color: rgba(0, 0, 0, .4);
+    display: none;
+    max-height: 35vw;
+    width: 60vw;
+    overflow: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, .8);
+    color: orange;
+    padding: .5em;
+    border-radius: 0.5em;
+    border: 3px solid orange;
+    font-size: 0.9em;
+    max-width: 50vw;
+    text-align: center;
+
+}
+nav > a:hover {
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.exit {
+    position: absolute;
+    right: 1vh;
+    top: 1vh;
+    width: 4vh;
+    height: 4vh;
+}
+
+#bio-names {
+    display: flex;
+    justify-content: space-around;
+}
+
+#detail-popup {
+    font-family: 'Sedgwick Ave Display';
+}
+
+span {
+    color: rgba(255, 160, 0, .5);
+}
+
+#bio-popup {
+    width: 100vh;
+}
+
+.social-logos {
+    width: 1.75vw;
+    height: 1.75vw;
+    bottom: .5vh;
+}
+
+#insta {
+    left: 20vw;
+}
+
+#facebook {
+    right: 20vw; 
+    padding-top: .25vw;
+}
+
+#news-popup {
+    width: 100vh;
+}
+
+#news-popup > div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 2vh;
+}
+
+#news-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+tr, #bio-name, #news-popup > div, #bio-names > div, .exit, nav > a:hover, #music-popup > a {
+    cursor: pointer;
+    font-family: 'Sedgwick Ave Display';
+}
+
+#music-popup {
+    padding: 1.5em;
+}
+
+#music-popup > a {
+    text-decoration: none;
+    color: rgba(255, 165, 0, .9)
+    
+}
