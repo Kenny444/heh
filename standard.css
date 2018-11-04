@@ -1,5 +1,5 @@
 html, body {
-    background-image: url('../images/crop_hangingtree.png');
+    background-image: url('crop_hangingtree.png');
     background-position: 30% 30%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,10 +28,10 @@ html, body {
 }
 
 .noose1 {
-    background-image: url('../images/3noose.png');
+    background-image: url('3noose.png');
 }
 .noose2 {
-    background-image: url('../images/4noose.png');
+    background-image: url('4noose.png');
 }
 
 @keyframes noose-swing {
