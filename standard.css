@@ -87,6 +87,10 @@ html, body {
     top: 12vh;
 }
 
+.eyes {
+    display: none;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
