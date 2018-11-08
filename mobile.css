@@ -28,11 +28,15 @@
             content: '\A';
             white-space: pre;
         }
+        
+        #em {
+            color: rgba(255, 255, 255, .7)
+        }
        
         .eyes {
             display: none;
             background-size: cover;
-            position: fixed;
+            position: fixed !important;
             transform: rotate(-10deg);
         }
 
@@ -139,9 +143,6 @@
 
         nav > a {
             padding: .125em;
-        }
-
-        nav > a:active {
         }
 
         .popup  {
