@@ -156,6 +156,10 @@ nav > a:hover {
     height: 4vh;
 }
 
+#bio-names, #news-info, #tour-info {
+padding: .5em;
+}
+
 #bio-names {
     display: flex;
     justify-content: space-around;
