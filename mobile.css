@@ -1,0 +1,164 @@
+@media (hover: none) {
+
+    @media only screen and (orientation: portrait){
+
+        html, body {
+            background-image: url(../images/mobile-background.jpg);
+            background-color: black;
+            background-position: 50% -10vh;
+            background-size: cover;
+            background-attachment: fixed;
+            font-size: 3vh;
+            overflow: scroll;
+        }
+
+        .noose {
+            display: none !important;
+        }
+
+        #banner {
+            position: fixed;
+            text-align: center;
+            font-size: 9vh;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #banner > span:before {
+            content: '\A';
+            white-space: pre;
+        }
+       
+        .eyes {
+            display: none;
+            background-size: cover;
+            position: fixed;
+            transform: rotate(-10deg);
+        }
+
+        .eyes2 {
+            transform: rotate(10deg);
+        }
+        
+        .eyes3 {
+           transform: rotate(-5deg);
+        }
+        
+        .bigger-eyes {
+            width: 28vw;
+            height: 10vh;
+        }
+
+        .big-eyes {
+            width: 18vw;
+            height: 3vh;
+        }
+
+        .small-eyes {
+            width: 12vw;
+            height: 1.5vh;
+        }
+        
+        .smaller-eyes {
+            width: 8vw;
+            height: .75vh;
+        }
+
+        #center-eyes {
+            top: 63vh;
+            left: 35vw;
+        }
+        
+        #left-eyes1 {
+            top: 67vh;
+            left: 10vw;
+        }
+
+        #left-eyes2 {
+            top: 82vh;
+            left: 2vw;
+        }
+
+        #left-eyes3 {
+            top: 90vh;
+            left: 16vw;
+        }
+        
+        #left-eyes4 {
+            top: 70vh;
+            left: 16vw;
+        }
+        
+        #left-eyes5 {
+            top: 96vh;
+            left: 2vw;
+        }
+
+        #right-eyes1 {
+            top: 60vh;
+            right: 3vw;
+        }
+
+        #right-eyes2 {
+            top: 74vh;
+            right: 20vw;;
+        }
+
+        #right-eyes3 {
+            top: 84vh;
+            right: 3vw;
+        }
+
+        #right-eyes4 {
+            top: 78vh;
+            right: 9vw;
+        }
+        
+         #right-eyes5 {
+            top: 70vh;
+            right: 20vw;;
+        }
+
+        #right-eyes6 {
+            top: 92vh;
+            right: 12vw;
+        }
+
+        #right-eyes7 {
+            top: 95vh;
+            right: 12vw;
+        }
+        
+        nav {
+            flex-direction: column;   
+            text-align: center;
+            top: 75%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        nav > a {
+            padding: .125em;
+        }
+
+        nav > a:active {
+        }
+
+        .popup  {
+            position: fixed;
+            top: 40%;
+            max-height: 30vh;
+            min-width: fit-content;
+        }
+
+        .exit {
+            width: 3vh;
+            height: 3vh;
+        }
+
+        button {
+            color: black;
+            background-color: white;
+        }
+    }
+}
