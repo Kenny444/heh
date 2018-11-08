@@ -18,6 +18,12 @@ html, body {
     color: rgba(255, 255, 255, .7);
 }
 
+#em {
+        color: rgba(255, 255, 255, .7);
+        text-shadow: 3px 3px rgba(255, 165, 0, .6);
+
+}
+
 .noose {
     padding: 2vh;
     background-repeat: no-repeat;
