@@ -27,7 +27,7 @@ $(function () {
             hideEyes();
         }
         function showEyes() {
-            $('.eyes').fadeIn(600);
+            $('.eyes').css("display", "block");
         }
         function hideEyes() {
             $('.eyes').fadeOut(300);
